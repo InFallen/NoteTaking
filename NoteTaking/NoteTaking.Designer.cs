@@ -145,6 +145,7 @@
             this.Controls.Add(this.labelTitle);
             this.Name = "NoteTaking";
             this.Text = "Note Taking";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.NoteTaking_FormClosing);
             this.Load += new System.EventHandler(this.NoteTaking_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
